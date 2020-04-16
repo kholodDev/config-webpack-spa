@@ -3,7 +3,7 @@
 		"eslint:recommended",
 		"plugin:import/errors",
 		"plugin:jsx-a11y/strict",
-		"plugin:react/all",
+		"plugin:react/recommended",
 		"plugin:json/recommended-with-comments"
 	],
 	"plugins": ["babel", "import", "jsx-a11y", "react", "json"],
@@ -41,7 +41,7 @@
 		"max-nested-callbacks": ["error", 3],
 		"max-params": ["error", 3],
 		"max-statements": ["error", 5],
-		"max-lines": ["error", 100],
+		"max-lines": ["error", 200],
 		"semi": ["error", "never"],
 		"no-console": "error",
 		"no-var": "error",
@@ -49,6 +49,7 @@
 		"eol-last": ["error", "always"],
 
 		// React
-		"react/function-component-definition": ["error", { "namedComponents": "arrow-function" }]
+		"react/function-component-definition": ["error", { "namedComponents": "arrow-function" }],
+		"react/jsx-no-literals": "off"
 	}
 }
