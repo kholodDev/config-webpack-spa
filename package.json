@@ -4,8 +4,12 @@
 	"scripts": {
 		"start": "webpack-dev-server -p --config webpack.config.js",
 		"build": "webpack -p --config webpack.config.js",
-		"serve": "serve ./dist"
+		"serve": "serve ./dist",
+		"eslint": "eslint -f codeframe './src/**/*.{js,jsx}'"
 	},
+	"pre-commit": [
+		"eslint"
+	],
 	"devDependencies": {
 		"@babel/core": "^7.9.0",
 		"@babel/plugin-proposal-class-properties": "^7.8.3",
